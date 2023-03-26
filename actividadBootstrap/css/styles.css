@@ -1,0 +1,25 @@
+
+fieldset.scheduler-border {
+    border: 2.5px solid #0e0e0e !important;
+    padding: 0 1.8em 1.8em 1.8em !important;
+    margin:auto;
+    margin-top: 50px;
+    max-width: 700px;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+    margin-top: -15px;
+    background-color: white;
+    color: black;
+}
+
+
+label{
+    text-align: right;
+}
+

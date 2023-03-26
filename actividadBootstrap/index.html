@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section>
+
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Registro de Producto</legend>
+            <div class="container" style="margin: 0 25px 0 25px;">
+                <form action="guardado.html" class="row mt-3 needs-validation" novalidate>
+                    <div class="row mb-4 position-relative">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Codigo:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="colFormLabel" required>
+                            <div class="valid-tooltip">
+                                Correcto!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Campo Obligatorio*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4 position-relative">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Descripcion:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="colFormLabel" required>
+                            <div class="valid-tooltip">
+                                Correcto!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Campo Obligatorio*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4 position-relative">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Codigo de Barra:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="colFormLabel" required>
+                            <div class="valid-tooltip">
+                                Correcto!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Campo Obligatorio*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4 position-relative">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Precio Unitario:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="colFormLabel" required>
+                            <div class="valid-tooltip">
+                                Correcto!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Campo Obligatorio*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4 position-relative">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Stock:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="colFormLabel" required>
+                            <div class="valid-tooltip">
+                                Correcto!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Campo Obligatorio*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4 position-relative">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Proveedor:</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="colFormLabel" required>
+                            <div class="valid-tooltip">
+                                Correcto!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Campo Obligatorio*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4 position-relative">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Estado:</label>
+                        <div class="col-sm-3" style="padding-top: 8px;">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Activo
+                            </label>
+                            <div class="valid-tooltip">
+                                Correcto!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Campo Obligatorio*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Categoria:</label>
+                        <div class="col-sm-7">
+                            <select class="form-select" aria-label="Default select example" required>
+                                <option value="1">Categoria 1</option>
+                                <option value="2">Categoria 2</option>
+                                <option value="3">Categoria 3</option>
+                                <option value="3">Categoria 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-4" style="text-align: center;">
+                        <div class="col-6">
+                            <button type="submit">Guardar</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </fieldset>
+    </section>
+    <script>
+        // Script for validate inputs 
+        (function () {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
